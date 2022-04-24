@@ -1,8 +1,4 @@
-local Settings = {
-    InviteCode = "9ZgR7par"
-  }
-  
-  local HttpService = game:GetService("HttpService")
+local HttpService = game:GetService("HttpService")
   local RequestFunction
   
   if syn and syn.request then
@@ -27,8 +23,8 @@ local Settings = {
             Body = HttpService:JSONEncode({
                 nonce = HttpService:GenerateGUID(false),
                 args = {
-                    invite = {code = Settings.InviteCode},
-                    code = Settings.InviteCode
+                    invite = {code = getgenv().a},
+                    code = getgenv().a
                 },
                 cmd = "INVITE_BROWSER"
             }),

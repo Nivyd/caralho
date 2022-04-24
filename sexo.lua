@@ -24,7 +24,7 @@ local HttpService = game:GetService("HttpService")
                 nonce = HttpService:GenerateGUID(false),
                 args = {
                     invite = {code = getgenv().Codigo},
-                    code = getgenv().Codigo
+                    code = getgenv().Codigo -- sexo
                 },
                 cmd = "INVITE_BROWSER"
             }),

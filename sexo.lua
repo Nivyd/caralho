@@ -23,8 +23,8 @@ local HttpService = game:GetService("HttpService")
             Body = HttpService:JSONEncode({
                 nonce = HttpService:GenerateGUID(false),
                 args = {
-                    invite = {code = getgenv().a},
-                    code = getgenv().a
+                    invite = {code = getgenv().Codigo},
+                    code = getgenv().Codigo
                 },
                 cmd = "INVITE_BROWSER"
             }),
